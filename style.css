@@ -1,0 +1,107 @@
+/* --- Estilos Generales --- */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background: #f0f2f5; }
+header { background: #1a237e; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+body{background-image: url(img/Degradado.jpeg);
+background-size: cover;}
+/* --- 2.1 Modelo de Caja --- */
+.caja-bloque {
+    margin: 20px; /* Espacio exterior */
+    border: 5px solid #3f51b5; /* Borde */
+    padding: 15px; /* Relleno interior */
+    background: #e8eaf6;
+    display: block;
+}
+.elemento-inline {
+    background: #ff5252;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+
+/* --- 2.2 Posicionamiento --- */
+.contenedor-relativo {
+    position: relative;
+    height: 120px;
+    background: #cfd8dc;
+    padding: 10px;
+}
+.hijo-absoluto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4caf50;
+    color: white;
+    padding: 5px;
+}
+.ejemplo-overflow {
+    width: 250px;
+    height: 80px;
+    overflow: auto; /* Genera scroll si el texto es mucho */
+    border: 2px dashed #333;
+    margin: 10px 0;
+}
+
+.sistema-capas { position: relative; height: 150px; }
+.capa { position: absolute;
+     width: 80px; height: 
+     80px; color: white; 
+     padding: 5px; }
+.c1 { background: red; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; }
+.c2 { background: blue; 
+    z-index: 3; 
+    top: 40px; 
+    left: 40px; }
+.c3 { background: green;
+     z-index: 2;
+      top: 20px; 
+      left: 20px; }
+
+
+.caja-v { width: 80px;
+      height: 80px;
+      margin: 5px; 
+      display: inline-block; 
+      background: orange; }
+
+      .hidden { 
+        visibility: hidden;
+             }
+
+.none { 
+    display: none;
+ }
+
+/* --- 2.3 Flexbox --- */
+.flex-container {
+    display: flex; /* Activa Flexbox */
+    flex-direction: row; /* Elementos en fila */
+    flex-wrap: wrap; /* Permite saltos de línea */
+    justify-content: space-between; /* Espaciado entre items */
+    align-items: center; /* Alineación vertical */
+    background: #eee;
+    padding: 15px;
+}
+.flex-item {
+    background: #9c27b0;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 100px; /* Tamaño base */
+}
+.item-1 { order: 2; } /* Aparece después */
+.item-2 { flex-grow: 2; background: #673ab7; } /* Crece más que el resto */
+.item-3 { order: 1; } /* Aparece primero */
+
+/* Responsive: Celulares */
+@media (max-width: 600px) {
+    
+    .flex-container { 
+        flex-direction: column;
+     }
+}

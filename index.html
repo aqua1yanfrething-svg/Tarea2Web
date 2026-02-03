@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2: CSS3 - Diseño de Aplicaciones Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Universidad Tecnica Nacional</h1>
+        <h2>Carrera: Ingenieria del Software - ISW</h2>
+        <p><strong>Curso:</strong> ISW-512 Diseño de Aplicaciones Web</p>
+        <p><strong>Profesor:</strong> Mit. Sergio Gonzalez Salazar</p>
+        <p><strong>Estudiante:</strong> Yanfret Cruz jimenez</p>
+    </header>
+
+    <main>
+        <section id="seccion2-1">
+            <h2>2.1. Modelo de Caja (Box Model)</h2>
+            <p>Demostración de margen, borde, relleno y contenido.</p>
+            <div class="caja-bloque">Elemento de Bloque (Div) - Ocupa todo el ancho.</div>
+            <span class="elemento-inline">Elemento Inline (Span)</span>
+            <span class="elemento-inline">Otro Inline</span>
+        </section>
+
+        <section id="seccion2-2">
+            <h2>2.2. Posicionamiento y Visualización</h2>
+            
+            <div class="contenedor-relativo">
+                Contenedor Relativo
+                <div class="hijo-absoluto">Hijo Absoluto </div>
+            </div>
+
+            <div class="ejemplo-overflow">
+                <strong>Prueba de Overflow:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin vel dapibus nisi. Este texto desborda el contenedor para activar el scroll.
+            </div>
+            <section><p>Esta parte donde se ve cual se superpone sobre el otro</p></section>
+            <div class="sistema-capas">
+                <div class="capa c1">Z-Index 1</div>
+                <div class="capa c2">Z-Index 3 (Al frente)</div>
+                <div class="capa c3">Z-Index 2 (Medio)</div>
+            </div>
+
+            <div class="visibilidad">
+                <div class="caja-v hidden">Visibility: Hidden (Ocupo espacio)</div>
+                <div class="caja-v none">Display: None (No existo en el flujo)</div>
+                <div class="caja-v visible">Visible</div>
+            </div>
+        </section>
+
+        <section id="seccion2-3">
+            <h2>2.3. Flexbox en CSS3</h2>
+            <div class="flex-container">
+                <div class="flex-item item-1">Item 1 (Order: 2)</div>
+                <div class="flex-item item-2">Item 2 (Grow: 2)</div>
+                <div class="flex-item item-3">Item 3 (Order: 1)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>UTN - Tarea 2 - 2024</p>
+    </footer>
+
+</body>
+</html>
